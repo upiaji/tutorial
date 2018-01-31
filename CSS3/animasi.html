@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+
+    <style>
+
+      body{
+        margin-bottom: 500px;
+        margin-left: 50px;
+      }
+
+      div{
+        background: yellow;
+        width: 150px;
+        height: 150px;
+        animation-name: goyang;
+        animation-duration: 5s;
+
+        animation-iteration-count: 2;
+        /*animation-direction: alternate*/
+
+        animation-delay: 1s;
+        animation-fill-mode: forwards;        /*nentuin di kondisi akhir*/
+        animation-timing-function: ease-in;
+        animation-play-state: paused;
+      }
+
+      div:hover{
+        animation-play-state: running;
+      }
+
+      @keyframes goyang {
+        0% {background: yellow; width: 160px;}
+        25% {background: red;}
+        50% {background: blue; width: 140px;}
+        75% {background: aqua;}
+        100% {background: black; width: 100px;}
+      }
+
+      /*@keyframes goyang {
+          from{background: yellow;}
+          to{background: red;}
+      }*/
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Animasi</h1>
+    <div></div>
+
+  </body>
+</html>

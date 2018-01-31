@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+  </head>
+  <body>
+
+    <h1>CSS TIPS</h1>
+
+    <div class="wrapper">
+    <a href="#menu1">Menu1</a>
+      <div id="menu1" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+
+    <div class="wrapper">
+    <a href="#menu2" >Menu2</a>
+      <div id="menu2" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+
+    <div class="wrapper">
+    <a href="#menu3" >Menu3</a>
+      <div id="menu3" class="isi">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </div>
+    </div>
+
+    <style media="screen">
+
+    body{
+      margin : 15% 15%;
+      font-family: sans-serif;
+    }
+
+    .wrapper{
+      margin: 30px;
+    }
+
+    a{
+      display: block;
+      background-color: rgb(151, 129, 241);
+      color: white;
+      font-size: 26px;
+      color: black;
+      text-decoration: none;
+    }
+
+    .isi{
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .isi:target{
+      padding: 0 10px;
+      height: auto;
+    }
+
+    </style>
+  </body>
+</html>

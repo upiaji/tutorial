@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+  </head>
+  <body>
+
+    <h1>CSS TIPS</h1>
+
+    <a href="#daftar"> Daftar </a>
+    <a href="#login"> Login </a>
+
+    <div class="kotak" id="daftar">
+      <div class="in-kotak">
+        <input type="text" name="name" value=""> <br>
+        <input type="text" name="name" value=""> <br>
+        <button> Daftar </button> <br>
+        <a href="#"> Tutup </a>
+      </div>
+    </div>
+
+    <div class="kotak" id="login">
+      <div class="in-kotak">
+        <input type="text" name="name" value=""> <br>
+        <input type="text" name="name" value=""> <br>
+        <button> Login </button> <br>
+        <a href="#"> Tutup </a>
+      </div>
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+
+    <style media="screen">
+
+      body{
+        margin : 15% 15%;
+        font-family: sans-serif;
+      }
+
+      a{
+        color: black;
+        text-decoration: none;
+      }
+
+      .in-kotak{
+        background-color: rgb(161, 161, 179);
+        padding: 10px;
+        position: fixed;
+        left: 50%;
+        width: 300px;
+        height: 100px;
+        margin-left: -150px;
+        transform: translateY(-400%);
+        transition: transform 1s ease;
+      }
+
+      .kotak:before{
+        content: '';
+        background-color: rgba(0,0,0,0.5);
+        position: fixed;
+        top:0;
+        left: 0;
+        height: 100%; width: 100%;
+        display: none;
+      }
+
+      .kotak:target .in-kotak{
+        transform: translateY(0%);
+      }
+
+      .kotak:target::before{
+        display: block;
+      }
+
+    </style>
+  </body>
+</html>

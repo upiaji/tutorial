@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+  </head>
+  <body>
+
+    <h1>CSS TIPS</h1>
+    <a href="#" class="button no-1">Berhasil </a>
+    <a href="#" class="button no-2">Berbahaya </a>
+    <a href="#" class="button no-3">Hati-hati </a>
+
+    <style media="screen">
+
+      body{
+        margin: 15% 15%;
+        font-family: sans-serif;
+      }
+
+      .button{
+        text-decoration: none;
+        color: black;
+        display: block;
+        width: 200px;
+        padding: 5px 10px;
+        margin: 10px;
+        text-align: center;
+        font-size: 24px;
+        -webkit- border-radius: 10px;
+        -moz- border-radius: 10px;
+      }
+
+      .no-1{
+        background-color: rgba(60, 189, 217, 0.7);
+      }
+      .no-1:hover{
+        background-color: rgba(60, 189, 217, 1);
+      }
+
+      .no-2{
+        background-color: rgb(227, 76, 71);
+        box-shadow: 0 4px 3px 0 rgb(117, 117, 124);
+      }
+
+      .no-3{
+        background-color: rgb(227, 202, 32);
+      }
+
+    </style>
+  </body>
+</html>

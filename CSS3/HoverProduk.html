@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+  </head>
+  <body>
+
+    <h1>CSS TIPS</h1>
+
+    <div id="wrap">
+      <img src="baju.jpg" alt="" />
+      <div id="info">
+        <p> Baju Ijo <span> 2500,- Rp </span> </p>
+        <a href="">Belanja</a>
+      </div>
+    </div>
+
+    <style media="screen">
+
+      body{
+        margin : 8% 8%;
+        font-family: sans-serif;
+      }
+
+      #wrap{
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+      }
+
+      #info{
+        background-color: rgba(0,0,0, 0.7);
+        position: absolute;
+        top:0px;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-top: 30%;
+        color: white;
+      }
+
+      #info span{
+        display: block;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        border: 1px solid white;
+        padding: 5px;
+      }
+
+      a:hover{
+        background-color: white;
+        color: black;
+      }
+
+      #wrap img{
+        width: 100%;
+        height: auto;
+      }
+
+      #wrap #info{
+        display: none;
+      }
+
+      #wrap:hover #info{
+        display: block;
+      }
+    </style>
+  </body>
+</html>

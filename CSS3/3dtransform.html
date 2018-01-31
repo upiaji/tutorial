@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Belajar css3</title>
+
+    <style>
+      div{
+        width:100px; height:100px; margin-bottom:5px;
+        transition: width 1s;
+      }
+
+      #div1{
+        background: blue;
+        transform: rotateX(45deg);
+      }
+
+      #div2, #div4{
+        perspective: 100px;
+        perspective-origin: 60%, 10%;
+      }
+      #div3{
+        background: red;
+        transform: translateZ(1px) rotateZ(25deg);
+        transition: transform 2s;
+      }
+      #div3:hover{
+        transform: translateZ(10px) rotateZ(50deg);
+      }
+
+      #div5{
+        background: red;
+        transform: scaleZ(1) rotateY(45deg);
+        transition: transform 2s;
+        border: 1px solid black;
+      }
+
+      #div5:hover{
+          transform: scaleZ(1.5) rotateY(45deg);
+      }
+
+      #div6{
+        background: aqua;
+        transform: scaleY(1) rotateY(45deg);
+        transition: transform 2s;
+        border: 1px solid black;
+      }
+
+      #div6:hover{
+          transform: scaleY(1.5) rotateY(45deg);
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <h1>Perspective</h1>
+    <div id="div0">
+      <div id="div1"></div>
+    </div>
+
+    <h1>Translate & Rotate</h1>
+    <div id="div2">
+      <div id="div3"></div>
+    </div>
+
+    <h1>Scale</h1>
+    <div id="div4">
+      <div id="div5">Scale Z</div>
+      <div id="div6">Scale Y</div>
+    </div>
+
+  </body>
+</html>
